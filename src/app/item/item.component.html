@@ -1,0 +1,8 @@
+<section >
+<img  src={{itemchild.pic}} height="250px" width="250px">
+        <p align="center" >
+          <span>Name: {{itemchild.name}}</span><br>
+          <span>Price: {{itemchild.price | currency}}</span>
+          </p>
+              <button type="button" class="btn btn-info" data-dismiss="alert" (click)="addToCart(itemchild)">Order </button>
+      </section>

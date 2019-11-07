@@ -1,0 +1,30 @@
+<!-- <section style="display: flexbox"> -->
+  <section class="container">
+<h2 style="color: coral; font-size: 40px;" align="center">That's what you will 'EAT' today</h2><br>
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item Ordered</th>
+      <th scope="col">Price</th>
+      <!-- <th scope="col">Handle</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of orders; let i = index">
+      <th scope="row">{{i}}</th>
+      <!-- <td>{{i}}</td> -->
+      <td>{{ item.name }}</td>
+      <td>{{ item.price | currency }}</td>
+    </tr>
+    <tr class="table-secondary">
+        <th scope="row">Total Cost</th>
+        <td colspan="1"></td>
+        <td>{{totalPrice() | currency}}</td>
+      </tr>
+  </tbody>
+</table>
+<br>
+
+</section>
+<!-- </section>  -->

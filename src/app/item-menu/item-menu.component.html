@@ -1,0 +1,14 @@
+<section>
+    <h2 style="font-size: 40px; color: coral;" align="center">Today's Menu</h2>
+
+</section>
+<div class="menuItems">
+          <br>
+      <mat-card class="example-card" *ngFor="let item of menuItems">
+    <app-item [itemchild] = "item" ></app-item>
+  </mat-card> 
+      <!-- <div>
+          {{itemSelected}}
+      </div> -->
+      <br>
+    </div>
